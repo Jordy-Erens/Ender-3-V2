@@ -1,0 +1,63 @@
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img width="100" alt="Ender Logo" src="../assets/creality-ender-logo(original).png"/><br>
+  <h2>{{title}}</h2>  
+</div>
+
+<!--Start Calculate Filament-->
+<div class="container-filament">
+  <div class="title" style="--clr:#ff1867">
+    <h2>Calculate filament</h2>
+  </div>
+  <input type="text" placeholder="Length filament spool" [(ngModel)]="lengthSpool">
+  <br>
+  <br>
+  <input type="text" placeholder="Length print" [(ngModel)]="lengthPrint">
+  <br>
+  <button (click)="calculateFilament()">Calculate</button>
+  <br>
+  <div class="result" style="--clr:#ff1867">
+    <h3>{{resultFilament}}</h3>
+  </div>
+</div>
+<!--End Calculate Filament-->
+
+<!--Start Calculate Costs-->
+<div class="container-costs">
+  <div class="title" style="--clr:#1976d2">
+    <h2>Calculate costs</h2>
+  </div>
+  <input type="text" placeholder="New purchases" [(ngModel)]="newCosts">
+  <br>
+  <br>
+  <input type="text" placeholder="alreadySpend" [(ngModel)]="alreadySpend">
+  <br>
+  <button (click)="calculateCosts()">Calculate</button>
+  <br>
+  <div class="result" style="--clr:#1976d2">
+    <h3>{{resultCosts}}</h3>
+  </div>
+</div>
+<!--End Calculate Costs-->
+
+<!--Start Check list-->
+<div class="container-checklist">
+ <h2>CheckList before printing</h2> 
+  <table>
+  <tr>
+    <td><input type="checkbox">Clean nozzle</td>
+    <td><input type="checkbox">Level Bed</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox">Right Filament Settings</td>
+    <td><input type="checkbox">Right Filament in Printer</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox">Enough Filament on Spool</td>
+    <td><input type="checkbox">Clean Printbed</td>
+  </tr>
+  </table>
+  <button>check</button>
+</div>
+<!--End Check list-->
