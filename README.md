@@ -1,5 +1,5 @@
 # Ender-3-V2
-Project Angular
+Project Angular-
 Dit project gaat mij helpen met het bijhouden van de kosten, lengte van filament en het onderhouden van mijn 3D printer (Ender 3 V2)
 
 # Rode Box
